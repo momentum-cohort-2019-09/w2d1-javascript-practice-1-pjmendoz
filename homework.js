@@ -158,7 +158,7 @@ function gcd(a,b) {
         b = b/2
         d = d + 1
     } 
-    while (a != B) {
+    while (a != b) {
         if (isEven(a)) {
             a = a/2 
         } 
@@ -166,7 +166,7 @@ function gcd(a,b) {
             b = b/2
         } 
         else if (a > b) {
-            a = (a – b)/2
+            a = (a - b)/2
         } 
         else {
             b = (b-a)/2 }
