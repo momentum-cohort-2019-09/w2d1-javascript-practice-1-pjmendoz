@@ -98,6 +98,23 @@ lesser(1, 2)
 //
 // If any other language code is used, return nothing.
 
+function multigreeting(name, lang) {
+    if (lang === "en") {
+        return "Hello, " + name + "!"
+    } else if (lang === "es") {
+        return ("¡Hola, " + name + "!")
+    } else if  (lang === "fr") {
+        return ("Bonjour, " + name + "!")
+    } else if (lang === "eo") {
+        return ("Saluton, " + name + "!")
+    } else {
+        return 
+    } 
+        
+}
+
+multigreeting (Katie, en)
+
 
 // 10. The greatest common divisor (https://en.wikipedia.org/wiki/Greatest_common_divisor)
 // is the largest integer that, given two other integers, can be divided into them. For
