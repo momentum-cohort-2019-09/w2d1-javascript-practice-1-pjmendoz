@@ -46,12 +46,20 @@ function isEven(num) {
 // Fahrenheit temperature as an argument and returns the
 // temperature in Celsius.
 
-function fahrenheitToCelsius (fahrenheight)
-
+function fahrenheitToCelsius(f) {
+        return ((f - 32) * 5 / 9)
+      }
+          
 // 6. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
 
+function celsiusToFahrenheit(c) {
+        return ((c * (9 / 5)) + 32)
+      }
+
+celsiusToFahrenheit(32)    
+    
 // 7. Create a function called fahrenheitToKelvin that takes a
 // Fahrenheit temperature as an argument and returns the
 // temperature in Kelvin. This function must use your previous
@@ -59,9 +67,24 @@ function fahrenheitToCelsius (fahrenheight)
 // Absolute zero (0 K) is equivalent to −273.15 C.
 // 1 degree Kelvin equals 1 degree Celsius.
 
+function fahrenheitToKelvin (f) {
+    return ((f - 32)* 5 / 9 + 273.15)
+}
+
 // 8. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
 // use an if/else statement.
+
+function lesser(a, b) {
+    if (a < b) {
+        return a
+    } 
+    else {
+        return b
+    }
+}
+
+lesser(1, 2)
 
 // 9. Create a function called multigreeting that takes a name
 // and a language code and returns a version of "Hello, <name>!"
@@ -74,6 +97,7 @@ function fahrenheitToCelsius (fahrenheight)
 // eo - Saluton, <name>!
 //
 // If any other language code is used, return nothing.
+
 
 // 10. The greatest common divisor (https://en.wikipedia.org/wiki/Greatest_common_divisor)
 // is the largest integer that, given two other integers, can be divided into them. For
