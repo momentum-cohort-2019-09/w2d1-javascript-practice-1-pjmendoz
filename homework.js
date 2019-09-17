@@ -152,13 +152,13 @@ multigreeting(Katie, en)
 // divisor using the instructions above.
 
 function gcd(a,b) {
-    d = 0
+    let d = 0
     while (isEven(a) && isEven(b)) {
         a = a/2
         b = b/2
         d = d + 1
     } 
-    while (a != b) {
+    while (a !== b) {
         if (isEven(a)) {
             a = a/2 
         } 
@@ -171,7 +171,7 @@ function gcd(a,b) {
         else {
             b = (b-a)/2 }
     }          
-    const g = a
+    let g = a
     return g * 2**d                
 }
 
